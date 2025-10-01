@@ -1,0 +1,36 @@
+The accuracy of the models before fine tuning are :
+K nearest Neighbors : 0.731707       
+Logistic Regression : 0.8
+Random Forest : 0.985366
+
+After hyperparameter tuning following are the scores :
+
+KNN
+using Grid Search cv
+Accuracy score : 0.9853658536585366 .
+Best parameters : 'metric': 'euclidean', 'n_neighbors': 1, 'weights': 'uniform'.
+
+LOGISTIC REGRESSION
+using Randomized Search cv
+Accuracy score : 0.8048780487804879
+Best parameters : 'solver': 'liblinear', 'C': 1702769.1722259116
+
+using Grid Search cv 
+Accuracy score : 0.8146341463414634
+Best parameters : 'C': 0.09884959046625667, 'solver': 'liblinear'
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.75      0.80       102
+           1       0.78      0.88      0.83       103
+
+    accuracy                           0.81       205
+   macro avg       0.82      0.81      0.81       205
+weighted avg       0.82      0.81      0.81       205
+
+Accuracy score:  0.862439024390244
+Recall score:  0.8974842767295597
+Precision score:  0.8441144218275097
+F1 score:  0.8698741174275559
+
